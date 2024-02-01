@@ -1,7 +1,10 @@
 import requests
 from termcolor import colored
+import os
 
-personal_access_token = "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"
+# Securely store your personal access token
+personal_access_token = os.environ.get("GITHUB_ACCESS_TOKEN")
+
 # Base URL for GitHub API
 base_url = "https://api.github.com"
 # Define the keyword to search for
